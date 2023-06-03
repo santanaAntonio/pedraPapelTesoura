@@ -1,0 +1,12 @@
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\bin\Debug\net6.0\pedraPapelTesoura.Domain.deps.json
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\bin\Debug\net6.0\pedraPapelTesoura.Domain.dll
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\bin\Debug\net6.0\pedraPapelTesoura.Domain.pdb
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.csproj.AssemblyReference.cache
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.AssemblyInfoInputs.cache
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.AssemblyInfo.cs
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.csproj.CoreCompileInputs.cache
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.dll
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\refint\pedraPapelTesoura.Domain.dll
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\pedraPapelTesoura.Domain.pdb
+D:\tony\ProjetosGit\pedraPapelTesoura\Api\ClassLibrary1pedraPapelTesoura.Domain\obj\Debug\net6.0\ref\pedraPapelTesoura.Domain.dll

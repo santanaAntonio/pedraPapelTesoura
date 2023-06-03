@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{B8F592FC-EAEE-4F2D-8228-483BEDB5994A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{EC9C48CB-61A5-4005-ADCC-59D63A3B732F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{52712BBC-ED36-430A-B3F7-049AA99E8948}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{3D71B4FD-7972-43CE-9E1F-05D8A2D259DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pedraPapelTesoura.webApi", "pedraPapelTesoura.webApi\pedraPapelTesoura.webApi.csproj", "{528BEA26-9E8B-4056-84A0-6CCA0D6C063F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pedraPapelTesoura.Application", "pedraPapelTesoura.Application\pedraPapelTesoura.Application.csproj", "{9589BAC5-A705-4166-A456-690EFB1D000C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pedraPapelTesoura.Domain", "ClassLibrary1pedraPapelTesoura.Domain\pedraPapelTesoura.Domain.csproj", "{40E96EA9-0BF5-437D-95C6-890811AEBB53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pedraPapelTesoura.Infrastructure", "pedraPapelTesoura.Infrastructure\pedraPapelTesoura.Infrastructure.csproj", "{6665F2EA-317A-4FAC-8F33-0161C2E6781B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{528BEA26-9E8B-4056-84A0-6CCA0D6C063F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528BEA26-9E8B-4056-84A0-6CCA0D6C063F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528BEA26-9E8B-4056-84A0-6CCA0D6C063F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528BEA26-9E8B-4056-84A0-6CCA0D6C063F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9589BAC5-A705-4166-A456-690EFB1D000C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9589BAC5-A705-4166-A456-690EFB1D000C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9589BAC5-A705-4166-A456-690EFB1D000C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9589BAC5-A705-4166-A456-690EFB1D000C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E96EA9-0BF5-437D-95C6-890811AEBB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E96EA9-0BF5-437D-95C6-890811AEBB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E96EA9-0BF5-437D-95C6-890811AEBB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E96EA9-0BF5-437D-95C6-890811AEBB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6665F2EA-317A-4FAC-8F33-0161C2E6781B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6665F2EA-317A-4FAC-8F33-0161C2E6781B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6665F2EA-317A-4FAC-8F33-0161C2E6781B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6665F2EA-317A-4FAC-8F33-0161C2E6781B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{528BEA26-9E8B-4056-84A0-6CCA0D6C063F} = {B8F592FC-EAEE-4F2D-8228-483BEDB5994A}
+		{9589BAC5-A705-4166-A456-690EFB1D000C} = {EC9C48CB-61A5-4005-ADCC-59D63A3B732F}
+		{40E96EA9-0BF5-437D-95C6-890811AEBB53} = {52712BBC-ED36-430A-B3F7-049AA99E8948}
+		{6665F2EA-317A-4FAC-8F33-0161C2E6781B} = {3D71B4FD-7972-43CE-9E1F-05D8A2D259DB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFAB0DAD-111F-4F9D-A235-D85C1EDD1D01}
+	EndGlobalSection
+EndGlobal
