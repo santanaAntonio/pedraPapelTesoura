@@ -1,0 +1,53 @@
+.resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.resultado.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resultado-empate h2 {
+  color: yellow;
+}
+
+.resultado-derrota h2 {
+ color: red;
+}
+
+.resultado-vitoria h2 {
+ color: green;
+}
+
+.resultado-texto {
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.resultado-texto.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.resultado-texto h2 {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
