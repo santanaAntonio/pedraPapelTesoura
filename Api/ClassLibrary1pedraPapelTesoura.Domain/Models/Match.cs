@@ -16,5 +16,7 @@ namespace pedraPapelTesoura.Domain.Models
         public Bet PlayerBet { get; set; }
 
         public Bet IaBet { get; set; }
+
+        public Result Result { get; set; }
     }
 }

@@ -9,12 +9,13 @@ namespace pedraPapelTesoura.Application.Contracts.Mappers
     {
         public static Match ToEntity(MatchRequest request, Bet iaBet)
         {
-            return new Match { IaBet = iaBet, PlayerBet = request.PlayerBet };
+            Bet betEnum = (Bet)Enum.Parse(typeof(Bet), request.PlayerBet, true);
+            return new Match { IaBet = iaBet, PlayerBet = betEnum};
         }
 
         public static MatchResponse ToResponse(Match match)
         {
-            return new MatchResponse { IaBet = match.IaBet, PlayerBet = match.PlayerBet, PlayerWon = match.PlayerWon };
+            return new MatchResponse { IaBet = match.IaBet.ToString(), PlayerBet = match.PlayerBet.ToString(), PlayerWon = match.Result.ToString()};
         }
     }
 }

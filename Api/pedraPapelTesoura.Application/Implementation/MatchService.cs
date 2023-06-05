@@ -4,11 +4,6 @@ using pedraPapelTesoura.Application.Contracts.Mappers;
 using pedraPapelTesoura.Domain.Contracts;
 using pedraPapelTesoura.Domain.Models;
 using pedraPapelTesoura.Domain.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pedraPapelTesoura.Application.Implementation
 {
@@ -35,8 +30,7 @@ namespace pedraPapelTesoura.Application.Implementation
         {
             if (match.PlayerBet == match.IaBet)
             {
-                // Empate
-                match.PlayerWon = false;
+                match.Result = Result.Empate;
             }
             else if (
                 (match.PlayerBet == Bet.PEDRA && match.IaBet == Bet.TESOURA) ||
@@ -44,13 +38,11 @@ namespace pedraPapelTesoura.Application.Implementation
                 (match.PlayerBet == Bet.TESOURA && match.IaBet == Bet.PAPEL)
             )
             {
-                // Jogador venceu
-                match.PlayerWon = true;
+                match.Result = Result.Vitoria;
             }
             else
             {
-                // IA venceu
-                match.PlayerWon = false;
+                match.Result = Result.Derrota;
             }
 
             return match;
