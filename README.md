@@ -1,6 +1,6 @@
 # Pedra, Papel, Tesoura
 
-Com o intuito de não deixar o jogo da minha infância se perder com o tempo, resolvi criar esta versão virtual para que novas crianças possam conhecer também.
+Com o intuito de reforçar meus estudos em c# resolvi criar este jogo que fez parte da minha adolecencia.
 
 ### Regras:
 ### Wins: 
