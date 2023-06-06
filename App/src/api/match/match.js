@@ -5,9 +5,9 @@ export function useMatch() {
     async function match(PlayerBet) {
         try {
             const response = await axiosInstance.post(
-                `/match`,{
-                    PlayerBet: PlayerBet,
-                }
+                `/match`, {
+                PlayerBet: PlayerBet,
+            }
             );
             return response.data;
         } catch (error) {
@@ -15,7 +15,17 @@ export function useMatch() {
         }
     }
 
+    async function scoreboard() {
+        try {
+            const response = await axiosInstance.get(`/match`);
+            return response.data;
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
     return {
-        match
+        match,
+        scoreboard
     };
 }

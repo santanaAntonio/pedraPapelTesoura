@@ -54,5 +54,17 @@ namespace pedraPapelTesoura.Application.Implementation
 
             return (Bet)bets.GetValue(random.Next(bets.Length));
         }
+
+        public ScoreBoard ScoreBoard()
+        {
+            var list = _matchRepository.ListMatches();
+
+            int wins = list.Count(match => match.Result == Result.Vitoria);
+            int losses = list.Count(match => match.Result == Result.Derrota);
+            int ties = list.Count(match => match.PlayerBet == match.IaBet);
+
+            return new ScoreBoard { PlayerWin = wins, PlayerLoss = losses, Tie = ties };
+        }
+
     }
 }

@@ -6,6 +6,7 @@ import papel from '../../../assets/img/papel.png';
 import tesoura from '../../../assets/img/tesoura.png';
 import randomico from '../../../assets/img/randomico.png';
 import { useMatch } from '../../../api/match/match';
+import { Result } from '../../components/result/result';
 import { Scoreboard } from '../../components/scoreboard/scoreboard';
 
 
@@ -26,7 +27,7 @@ export function Match() {
     <div className="container">
 
       {response ? (
-        <Scoreboard
+        <Result
           playerWon={response.playerWon}
           playerBet={response.playerBet}
           iaBet={response.iaBet}
@@ -34,6 +35,7 @@ export function Match() {
         />
       ) : (
         <>
+            <Scoreboard />
             <h1>Faça sua Jogada:</h1>
         <div className="match">
           <div className="jogada">
@@ -46,7 +48,7 @@ export function Match() {
           </div>
           <div className="jogada">
             <img src={randomico} alt="randomico" />
-            <h2>I.A.</h2>
+            <h2>Computador</h2>
           </div>
         </div>
           </> )}

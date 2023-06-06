@@ -1,10 +1,5 @@
 ﻿using pedraPapelTesoura.Domain.Contracts;
 using pedraPapelTesoura.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace pedraPapelTesoura.Infrastructure.Repositories
 {
@@ -17,6 +12,11 @@ namespace pedraPapelTesoura.Infrastructure.Repositories
         _partidas.Add (partida);
 
             return partida;
+        }
+
+        public List<Match> ListMatches() 
+        {
+            return _partidas;
         }
     }
 }

@@ -1,58 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import "../index.css"
-import pedra from '../../../assets/img/pedra.png';
-import papel from '../../../assets/img/papel.png';
-import tesoura from '../../../assets/img/tesoura.png';
+import "../scoreboard/index.css"
+import useGlobalUser from "../../../context/user/user.context";
+import { useMatch } from '../../../api/match/match';
 
-export function Scoreboard({ playerWon, playerBet, iaBet, onPlayAgain }) {
-    const [showResult, setShowResult] = useState(false);
+export function Scoreboard() {
+    const [scores, setScores] = useState([])
+    const [user, setUser] = useGlobalUser();
+    const { scoreboard } = useMatch();
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowResult(true);
-        }, 500);
+        async function GetScore() {
+            const response = await scoreboard();
+            setScores(response);
+        }
+        GetScore();
+    }, [])
 
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
-
-    const resultClass = playerWon === 'Empate' ? 'resultado-empate' : playerWon === 'Derrota' ? 'resultado-derrota' : 'resultado-vitoria';
 
     return (
-        <>
-            <div className={`resultado ${showResult ? 'show' : ''}`}>
-                <div className="jogada">
-                    <img
-                        src={
-                            playerBet === 'PEDRA'
-                                ? pedra
-                                : playerBet === 'PAPEL'
-                                    ? papel
-                                    : tesoura
-                        }
-                        alt="jogada do jogador"
-                    />
-                    <h2>{playerBet}</h2>
-                </div>
-                <div className="jogada">
-                    <img
-                        src={
-                            iaBet === 'PEDRA'
-                                ? pedra
-                                : iaBet === 'PAPEL'
-                                    ? papel
-                                    : tesoura
-                        }
-                        alt="jogada da I.A."
-                    />
-                    <h2>I.A.</h2>
-                </div>
+        <div className='scoreboard-container' >
+            <div>
+                {user} :  {scores.playerWin}
             </div>
-            <div className={`resultado-texto ${showResult ? 'show' : ''} ${resultClass}`}>
-                <h2 className="animated-text">{playerWon}</h2>
-                <button onClick={onPlayAgain}>Jogar Novamente</button>
+            <div>
+                Empates :  {scores.tie}
             </div>
-        </>
+            <div>
+                Computador :  {scores.playerLoss}
+            </div>
+        </div>
     );
 }

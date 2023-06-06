@@ -3,6 +3,7 @@ using pedraPapelTesoura.Application.Contracts;
 using pedraPapelTesoura.Application.Contracts.Documents.Requests;
 using pedraPapelTesoura.Application.Contracts.Documents.Responses;
 using pedraPapelTesoura.Application.Contracts.Mappers;
+using pedraPapelTesoura.Domain.Models;
 
 namespace pedraPapelTesoura.webApi.Controllers
 
@@ -21,9 +22,15 @@ namespace pedraPapelTesoura.webApi.Controllers
         [HttpPost]
         public MatchResponse AddMatch(MatchRequest request)
         {
-         var match = _matchService.Add(request);
+            var match = _matchService.Add(request);
 
-         return MatchMapper.ToResponse(match);
+            return MatchMapper.ToResponse(match);
+        }
+
+        [HttpGet]
+        public ScoreBoard GetScoreBoard() 
+        {
+            return _matchService.ScoreBoard();
         }
     }
 }
