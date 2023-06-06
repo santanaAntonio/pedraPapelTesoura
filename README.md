@@ -13,7 +13,7 @@ Com o intuito de reforçar meus estudos em c# resolvi criar este jogo que fez pa
 ##### Papel sempre perde para a Tesoura.
 ##### Tesoura sempre perde para a Pedra.
 
-![ScreenCaptureProject1](https://github.com/santanaAntonio/pedraPapelTesoura/assets/126611893/de619817-8fac-4ac7-80a3-d6e6fe195615)
+![ScreenCaptureProject2](https://github.com/santanaAntonio/pedraPapelTesoura/assets/126611893/924c3940-c4b9-4de7-836e-6f2e68b0f5c7)
 
 #### Técnologias usadas:
 ##### ReactJs para construir o Front-End
